@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.data-\[active\=true\]\:font-semibold[data-active=true] {
+    @apply border-b-2 border-orange-600
+}

@@ -1,15 +1,11 @@
-"use client";
-import { Button } from "@nextui-org/react";
-import React from "react";
+import NavigationBar from "@/components/NavigationBar";
 
 const Home = () => {
   return (
-    <div>
+    <main>
+      <NavigationBar />
       home page
-      <Button color="primary" variant="shadow">
-        Click to see More
-      </Button>
-    </div>
+    </main>
   );
 };
 
