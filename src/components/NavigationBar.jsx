@@ -46,8 +46,15 @@ const NavigationBar = () => {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </NavbarContent>
-      <NavbarBrand>
-        <Image src={logo} alt="Logo" height={50} width={100} priority />
+      <NavbarBrand className="flex items-center">
+        <Image
+          src={logo}
+          alt="Logo"
+          height={50}
+          width={100}
+          priority
+          className="w-auto h-auto mb-3"
+        />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4 ">
         {navMenuList}
