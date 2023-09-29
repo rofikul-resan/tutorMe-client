@@ -1,3 +1,4 @@
+import { shortNameAvatar } from "@/utility/utils";
 import {
   Avatar,
   Dropdown,
@@ -8,13 +9,6 @@ import {
 import React from "react";
 
 const UserInfo = () => {
-  const shortNameAvatar = (name) => {
-    const namePart = name.split(" ");
-    const arrayOfFirstCrt = namePart.map((part) => part.charAt(0));
-    const shortName = arrayOfFirstCrt.join("").slice(0, 2);
-    return shortName;
-  };
-  shortNameAvatar("Jason Hughes resan fofi");
   return (
     <div>
       <Dropdown placement="bottom-end">
