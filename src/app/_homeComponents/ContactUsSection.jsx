@@ -17,25 +17,27 @@ const ContactUsSection = () => {
           <div className="bg-black/50 absolute inset-0 z-10 "></div>
         </div>
         <div className="container px-5 py-24 mx-auto flex items-center text-orange-900">
-          <div class="bg-white/40  relative z-10 flex flex-wrap py-6 rounded shadow-md w-fit ml-10 h-fit ">
-            <div class="lg:w-1/2 px-6">
-              <h2 class="font-semibold text-gray-900 tracking-widest ">
+          <div className="bg-white/40  relative z-10 flex flex-wrap py-6 rounded shadow-md w-fit ml-10 h-fit ">
+            <div className="lg:w-1/2 px-6">
+              <h2 className="font-semibold text-gray-900 tracking-widest ">
                 ADDRESS
               </h2>
-              <p class="mt-1">
+              <p className="mt-1">
                 Photo booth tattooed prism, portland taiyaki hoodie neutra
                 typewriter
               </p>
             </div>
-            <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 class=" font-semibold text-gray-900 tracking-widest ">
+            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <h2 className=" font-semibold text-gray-900 tracking-widest ">
                 EMAIL
               </h2>
-              <a class="text-indigo-900 leading-relaxed">example@email.com</a>
-              <h2 class="font-semibold text-gray-900 tracking-widest mt-4">
+              <a className="text-indigo-900 leading-relaxed">
+                example@email.com
+              </a>
+              <h2 className="font-semibold text-gray-900 tracking-widest mt-4">
                 PHONE
               </h2>
-              <p class="leading-relaxed">123-456-7890</p>
+              <p className="leading-relaxed">123-456-7890</p>
             </div>
           </div>
           <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">

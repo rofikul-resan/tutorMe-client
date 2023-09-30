@@ -1,39 +1,25 @@
 "use client";
-import React, { useState } from "react";
+import UserInfo from "@/components/UserInfo";
 import {
+  Button,
+  Input,
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Button,
-  NavbarMenuToggle,
-  Input,
   NavbarMenu,
+  NavbarMenuToggle,
 } from "@nextui-org/react";
-import logo from "/src/app/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import React, { useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
-import UserInfo from "./UserInfo";
+import StudentNavLinkList from "./StudentNavLinkList";
+import logo from "/src/app/logo.png";
 
-const NavigationBar = () => {
+const DashboardNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathName = usePathname();
 
-  const navMenuList = (
-    <>
-      <NavbarItem isActive={pathName === "/"}>
-        <Link href="/">Home</Link>
-      </NavbarItem>
-      <NavbarItem isActive={pathName === "/all-class"}>
-        <Link href="/all-class">All Class</Link>
-      </NavbarItem>
-      <NavbarItem isActive={pathName === "/dashboard/my-class"}>
-        <Link href="/dashboard/my-class">My Class</Link>
-      </NavbarItem>
-    </>
-  );
   return (
     <Navbar
       isBordered
@@ -57,7 +43,7 @@ const NavigationBar = () => {
         />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4 ">
-        {navMenuList}
+        <StudentNavLinkList />
       </NavbarContent>
       <NavbarContent justify="end" className=" items-center">
         <NavbarContent as="div" className="items-center" justify="end">
@@ -76,9 +62,11 @@ const NavigationBar = () => {
           </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu>{navMenuList}</NavbarMenu>
+      <NavbarMenu>
+        <StudentNavLinkList />
+      </NavbarMenu>
     </Navbar>
   );
 };
 
-export default NavigationBar;
+export default DashboardNav;
