@@ -27,7 +27,7 @@ const NavigationBar = () => {
         <Link href="/">Home</Link>
       </NavbarItem>
       <NavbarItem isActive={pathName === "/all-class"}>
-        <Link href="/all-class">All Class</Link>
+        <Link href="/all-class">All Course</Link>
       </NavbarItem>
       <NavbarItem isActive={pathName === "/dashboard/my-class"}>
         <Link href="/dashboard/my-class">My Class</Link>

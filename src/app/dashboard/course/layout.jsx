@@ -5,6 +5,26 @@ import { ScrollShadow } from "@nextui-org/react";
 const CourseLayout = ({ children }) => {
   return (
     <div className=" py-14 md:w-10/12 mx-auto px-6">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            Python Learning
+          </h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+          <div>
+            <h3 className="text-xl">Instructor : Rofikul Resan</h3>
+            <p>
+              Duration : <span className="font-semibold">6</span> month
+            </p>
+          </div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+          gentrify, subway tile poke farm-to-table. Franzen you probably haven't
+          heard of them man bun deep jianbing selfies heirloom prism food truck
+          ugh squid celiac humblebrag.
+        </p>
+      </div>
       <div className="grid class-player-layout gap-10 ">
         <div>{children}</div>
         <div>
