@@ -1,3 +1,4 @@
+"use client";
 const shortNameAvatar = (name) => {
   const namePart = name.split(" ");
   const arrayOfFirstCrt = namePart.map((part) => part.charAt(0));
